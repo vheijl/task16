@@ -111,7 +111,7 @@ public class EmployeeDirectory {
                     padRight("Id", 3, ' ') +
                     padRight("FirstName", 18, ' ') +
                     padRight("LastName", 18, ' ') +
-                    padRight("Title", 24, ' ') +
+                    padRight("Title", 26, ' ') +
                     padRight("City", 14, ' ') +
                     padRight("Region", 15, ' ') +
                     padRight("Country", 2, ' ')
@@ -122,7 +122,7 @@ public class EmployeeDirectory {
                         padRight(Integer.toString(rs.getInt("Id")), 3, ' ') +
                         padRight(rs.getString("FirstName"), 18, ' ') +
                         padRight(rs.getString("LastName"), 18, ' ') +
-                        padRight(rs.getString("Title"), 24, ' ') +
+                        padRight(rs.getString("Title"), 26, ' ') +
                         padRight(rs.getString("City"), 14, ' ') +
                         padRight(rs.getString("Region"), 15, ' ') +
                         padRight(rs.getString("Country"), 2, ' ')
