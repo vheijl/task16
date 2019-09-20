@@ -60,6 +60,7 @@ public class EmployeeDirectory {
     private void printHeader() {
         System.out.println("+---------------------------------------+");
         System.out.println("List all employees at ACME INC");
+        System.out.println("A solution for Task 16 by Victor Heijler");
         System.out.println("+---------------------------------------+");
         System.out.println("How do you want to select employees?");
     }
@@ -108,24 +109,24 @@ public class EmployeeDirectory {
             String separator = new String(new char[108]).replace("\0", "-");
             System.out.println(separator);
             System.out.println(
-                    padRight("Id", 3, ' ') +
+                    padRight("Id",        3,  ' ') +
                     padRight("FirstName", 18, ' ') +
-                    padRight("LastName", 18, ' ') +
-                    padRight("Title", 26, ' ') +
-                    padRight("City", 14, ' ') +
-                    padRight("Region", 15, ' ') +
-                    padRight("Country", 2, ' ')
+                    padRight("LastName",  18, ' ') +
+                    padRight("Title",     26, ' ') +
+                    padRight("City",      14, ' ') +
+                    padRight("Region",    15, ' ') +
+                    padRight("Country",   2,  ' ')
             );
             System.out.println(separator);
             while (rs.next()) {
                 System.out.println(
                         padRight(Integer.toString(rs.getInt("Id")), 3, ' ') +
                         padRight(rs.getString("FirstName"), 18, ' ') +
-                        padRight(rs.getString("LastName"), 18, ' ') +
-                        padRight(rs.getString("Title"), 26, ' ') +
-                        padRight(rs.getString("City"), 14, ' ') +
-                        padRight(rs.getString("Region"), 15, ' ') +
-                        padRight(rs.getString("Country"), 2, ' ')
+                        padRight(rs.getString("LastName"),  18, ' ') +
+                        padRight(rs.getString("Title"),     26, ' ') +
+                        padRight(rs.getString("City"),      14, ' ') +
+                        padRight(rs.getString("Region"),    15, ' ') +
+                        padRight(rs.getString("Country"),    2, ' ')
                 );
             }
             System.out.println(separator);
